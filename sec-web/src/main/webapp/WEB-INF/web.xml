@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+
+    <distributable/>
+
+    <!--<filter>-->
+    <!--<filter-name>base64-dec</filter-name>-->
+    <!--<filter-class>com.github.q120011676.sec.base64.filter.Base64RequestDecryptionBufferedFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>base64-dec</filter-name>-->
+    <!--<url-pattern>/test</url-pattern>-->
+    <!--</filter-mapping>-->
+    <!--<filter>-->
+    <!--<filter-name>base64-enc</filter-name>-->
+    <!--<filter-class>com.github.q120011676.sec.base64.filter.Base64ResponseEncryptionBufferedFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>base64-enc</filter-name>-->
+    <!--<url-pattern>/test</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <!--<filter>-->
+    <!--<filter-name>hex-dec</filter-name>-->
+    <!--<filter-class>com.github.q120011676.sec.hex.filter.HexRequestDecryptionBufferedFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>hex-dec</filter-name>-->
+    <!--<url-pattern>/test</url-pattern>-->
+    <!--</filter-mapping>-->
+    <!--<filter>-->
+    <!--<filter-name>hex-enc</filter-name>-->
+    <!--<filter-class>com.github.q120011676.sec.hex.filter.HexResponseEncryptionBufferedFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>hex-enc</filter-name>-->
+    <!--<url-pattern>/test</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <!--<filter>-->
+        <!--<filter-name>rsa-dec</filter-name>-->
+        <!--<filter-class>com.github.q120011676.sec.rsa.filter.RSARequestDecryptionBufferedFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>rsa-dec</filter-name>-->
+        <!--<url-pattern>/test</url-pattern>-->
+    <!--</filter-mapping>-->
+    <filter>
+        <filter-name>rsa-enc</filter-name>
+        <filter-class>com.github.q120011676.sec.rsa.filter.RSAResponseEncryptionBufferedFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>rsa-enc</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>base64-enc</filter-name>
+        <filter-class>com.github.q120011676.sec.base64.filter.Base64ResponseEncryptionBufferedFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>base64-enc</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+</web-app>
+  

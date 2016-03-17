@@ -1,0 +1,6 @@
+dependencies {
+    compile(
+            project(':sec-core'),
+            'org.bouncycastle:bcprov-jdk15on:1.54'
+    )
+}
